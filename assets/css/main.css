@@ -1505,6 +1505,57 @@ input, select, textarea {
 							padding-top: 30px;
 						}
 
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			button,
+			.button {
+				font-size: 0.9em; /* Reduce font size */
+				padding: 0.4em 1em; /* Adjust padding */
+				}
+
+			#nav ul {
+				display: none; /* Hide navigation links */
+			}
+
+			#nav .menu-icon {
+				display: block; /* Show menu icon */
+				cursor: pointer;
+				font-size: 1.5em;
+				color: #fff;
+				padding: 0.5em;
+			}
+
+			#nav.active ul {
+				display: block; /* Show navigation links when menu is active */
+				background-color: #3FAE2A; /* Optional: Add background color */
+				position: absolute;
+				top: 3.5em;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+
+			#nav.active ul li {
+				display: block;
+				margin: 0.5em 0;
+			}
+
+		}
+
+		@media screen and (min-width: 737px) {
+			#nav .menu-icon {
+				display: none; /* Hide menu icon for larger screens */
+			}
+
+			#nav ul {
+				display: flex; /* Show navigation links */
+				justify-content: center;
+			}
+
+			#nav ul li {
+				margin: 0 1em;
+			}
 		}
 
 /* Form */

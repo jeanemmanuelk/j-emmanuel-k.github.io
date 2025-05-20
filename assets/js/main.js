@@ -29,6 +29,11 @@
 		$('#nav a, .scrolly').scrolly({
 			speed: 1000,
 			offset: function() { return $nav.height(); }
+		 });
+
+	// Menu toggle.
+		document.querySelector('.menu-icon').addEventListener('click', function () {
+			document.getElementById('nav').classList.toggle('active');
 		});
 
 })(jQuery);
